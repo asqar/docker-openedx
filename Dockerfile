@@ -3,6 +3,10 @@ FROM ubuntu:12.04
 
 ENV DEBIAN_FRONTEND noninteractive
 
+RUN \
+  mkdir /data && \
+  mkdir /data/db
+
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
 RUN \
