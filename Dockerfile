@@ -40,4 +40,4 @@ WORKDIR /var/tmp/configuration/playbooks
 RUN \
    ansible-playbook -c local ./edx_sandbox.yml -i "localhost,"
 
-#EXPOSE 80 80 18010
+EXPOSE 80 80 18010
