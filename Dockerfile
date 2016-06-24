@@ -9,7 +9,7 @@ RUN \
   apt-get update && \
   apt-get -y upgrade && \
   apt-get install -y build-essential software-properties-common python-software-properties curl git-core libxml2-dev libxslt1-dev libfreetype6-dev python-pip python-apt python-dev libxmlsec1-dev swig libmysqlclient-dev && \
-  apt-get install -y curl git vim wget && \
+  apt-get install -y curl git vim wget aptitude sudo && \
   rm -rf /var/lib/apt/lists/*
 
 RUN \
