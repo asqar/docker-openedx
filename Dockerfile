@@ -5,7 +5,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
   mkdir /data && \
-  mkdir /data/db
+  mkdir /data/db && \
+  touch /data/db/dummy
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
